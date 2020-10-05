@@ -74,6 +74,7 @@ def is_interaction_file(File3):
         str_reponse='false'
     else:
         str_reponse='true'
+    file_test.close()
     return str_reponse 
      
 print(is_interaction_file("D:/M2 2020-2021/Reseaux Biologiques Projet/toy_examplev1.txt"))
