@@ -1,3 +1,4 @@
+#premiere fonction
 def countCC(file):
     fichier=open(file,"r")
     int_ligne=int(fichier.readline()[:-1])
