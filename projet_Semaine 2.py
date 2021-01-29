@@ -49,64 +49,54 @@ def count_vertices_v2(file):
     print(nouveau_liste)
     file.close()
     return int_nombre_sommet
-print(count_vertices("D:/M2 2020-2021/Reseaux Biologiques Projet/toy_example.txt"))     
+print(count_vertices('D:/BS2/Human_HighQuality.txt'))     
 
 ##Q2 Fonction pour compter  le nombre d’arêtes d’un graphe.
-def count_edges(file):
-    file_line=open(file,"r")
-    number_line=int(file_line.readline()[:-1])
-    int_nombre_ar=0
-    liste_aretes=[]
-    j=0
-    while j<number_line:
-        line=file_line.readline()[:-1]
-        if line:
-            data=line.split()
-            tuples=(data[0],data[1])
-            liste_aretes.append(tuples)
-        j=j+1
-    print(liste_aretes)
-    int_nombre_ar=len(liste_aretes)
-    file_line.close()
-    return int_nombre_ar
+def count_edges():
+    #fonction a pour objectif de compte le nombre d’arêtes(interaction) d’un graphe de proteines.
+    liste=read_interaction_file_list('D:/BS2/Human_HighQuality.txt')
+    nbre_aretes = len(liste) 
+    return nbre_aretes
+    
 print(count_edges("D:/M2 2020-2021/Reseaux Biologiques Projet/toy_example.txt"))
 ##Fonction pour eliminer toutes les interactions redondantes et tous les homo-dimères
 ##Fonction qui elimine les interactions redondantes et homo-dimères
-
+def read_interaction_file_list(file):
+        #==============Description:
+        #La fonction a pour but e stocker le graphe d'interactions(proteine-proteine) dans une liste
+        #parametres d'entres:fichier de graphe d'interaction proteine-protein
+        #parametres de sorties:liste d'un couple(sommet1,sommet2) où sommet1 represente la première proteine et sommet2 represente la deuxième proteine 
+        #La fonction retourn une liste d'interactions proteine-proteine
+        file_line=open(file,"r")
+        file_line.readline()
+        list_interaction=[]
+        for str_ligne in file_line.readlines():
+            inter_sommet=str_ligne.split()
+            sommet1=inter_sommet[0]     #première proteine dans fichier de graphe d'interaction proteine-protein
+            sommet2=inter_sommet[1]     ##deuxième proteine dans fichier de graphe d'interaction proteine-protein
+            list_interaction.append((sommet1,sommet2)) #les deux sommets represente une interaction dans une liste
+        file_line.close()
+        return list_interaction
 def clean_interactome(file):
-    outfile=open(("D:/M2 2020-2021/Reseaux Biologiques Projet/toy_example_clean.txt"),"w")
-    file=open(file,"r")
-    number_line=int(file.readline()[:-1])
-    liste=[]
-    i=0
-    while i<number_line:
-        line=file.readline()[:-1]
-        data=line.split()
-        if len(data)==2:
-            truples=(data[0],data[1])
-            liste.append(truples)     
-        i=i+1
-    print(liste)
-    nouveau_liste=[]
-    for sommet in liste:
-        if sommet[0]!=sommet[1]:
-            nouveau_liste.append(sommet) #liste d'interactions sans homo-dimères
-    for sommet_inv in nouveau_liste:
-        somet_list_inver=(sommet_inv[1],sommet_inv[0])
-        i=1
-        for sommet_suivant in nouveau_liste[i:]:
-            if sommet_suivant[0]==sommet_inv[1] and sommet_suivant[1]==sommet_inv[0]:
-                nouveau_liste.remove(sommet_suivant)
-            if sommet_suivant[0]==somet_list_inver[1] and sommet_suivant[1]==somet_list_inver[0]:
-                nouveau_liste.remove(sommet_suivant)
-            i=i+1
-        
-    for interaction in nouveau_liste:
-        outfile.write(str(interaction[0]+" "+interaction[1]+"\n"))
-    file.close()
-    outfile.close()   
-print(clean_interactome("D:/M2 2020-2021/Reseaux Biologiques Projet/toy_example_v3.txt"))
-
+        #=========Descriptions:
+        #La fonction a pour but d'enlèver toutes les interactions redondantes, et
+        #tous les homo-dimères.
+        #parametres d'entre:fichier contenant un graphe d’interactions protéine-protéine
+        outfile=open(("D:/BS2/Human_HighQuality_clean.txt"),"w")
+        liste=read_interaction_file_list('D:/BS2/Human_HighQuality.txt')
+        Nouv_list_inter=[]             #Nouveau liste d'interaction
+        for interaction in liste:
+            nouveau_inter=(interaction[1],interaction[0]) #cas ou la première proteine devient la deuxième proteine et vice versa dans un fichier de graphe d'interactions
+            if interaction not in Nouv_list_inter:    
+                if nouveau_inter not in Nouv_list_inter:
+                    if interaction[0]!=interaction[1]:       #lorsque les deux proteines ne sont pas identiques
+                        Nouv_list_inter.append(interaction)  #nouveau liste sans interactions redondantes et tous les homo-dimères
+        int_nb_interaction= str(len(Nouv_list_inter))             #Nombre d'interaction
+        outfile.write(str(int_nb_interaction +'\n'))         #première ligne du fichier
+        for nouv_int in Nouv_list_inter:
+            nouv_interacion=' '.join(nouv_int)
+            outfile.write(str(nouv_interacion + '\n'))       #Nouvelles interactions des proteines
+    #Q 2.2.2 Question degré 
 #Fonction pour calculer le degré d'une protéine donné dans le graphe.
 def get_degree(file, prot):
     file_line=open(file,"r")
