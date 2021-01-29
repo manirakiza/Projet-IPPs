@@ -1,0 +1,29 @@
+Entry	Entry name	Status	Protein names	Gene names	Organism	Length
+Q8N7X0	ADGB_HUMAN	reviewed	Androglobin (Calpain-7-like protein)	ADGB C6orf103 CAPN7L	Homo sapiens (Human)	1667
+Q5T1N1	AKND1_HUMAN	reviewed	Protein AKNAD1	AKNAD1 C1orf62	Homo sapiens (Human)	836
+Q92667	AKAP1_HUMAN	reviewed	A-kinase anchor protein 1, mitochondrial (A-kinase anchor protein 149 kDa) (AKAP 149) (Dual specificity A-kinase-anchoring protein 1) (D-AKAP-1) (Protein kinase A-anchoring protein 1) (PRKA1) (Spermatid A-kinase anchor protein 84) (S-AKAP84)	AKAP1 AKAP149 PRKA1	Homo sapiens (Human)	903
+Q5VUY0	ADCL3_HUMAN	reviewed	Arylacetamide deacetylase-like 3 (EC 3.1.1.-)	AADACL3	Homo sapiens (Human)	407
+P62736	ACTA_HUMAN	reviewed	Actin, aortic smooth muscle (Alpha-actin-2) (Cell growth-inhibiting gene 46 protein) [Cleaved into: Actin, aortic smooth muscle, intermediate form]	ACTA2 ACTSA ACTVS GIG46	Homo sapiens (Human)	377
+Q9H553	ALG2_HUMAN	reviewed	Alpha-1,3/1,6-mannosyltransferase ALG2 (EC 2.4.1.132) (EC 2.4.1.257) (Asparagine-linked glycosylation protein 2 homolog) (GDP-Man:Man(1)GlcNAc(2)-PP-Dol alpha-1,3-mannosyltransferase) (GDP-Man:Man(1)GlcNAc(2)-PP-dolichol mannosyltransferase) (GDP-Man:Man(2)GlcNAc(2)-PP-Dol alpha-1,6-mannosyltransferase)	ALG2 UNQ666/PRO1298	Homo sapiens (Human)	416
+P0C7M7	ACSM4_HUMAN	reviewed	Acyl-coenzyme A synthetase ACSM4, mitochondrial (EC 6.2.1.2) (Acyl-CoA synthetase medium-chain family member 4)	ACSM4	Homo sapiens (Human)	580
+P49703	ARL4D_HUMAN	reviewed	ADP-ribosylation factor-like protein 4D (ADP-ribosylation factor-like protein 4L)	ARL4D ARF4L	Homo sapiens (Human)	201
+Q5TGY3	AHDC1_HUMAN	reviewed	AT-hook DNA-binding motif-containing protein 1	AHDC1	Homo sapiens (Human)	1603
+Q75V66	ANO5_HUMAN	reviewed	Anoctamin-5 (Gnathodiaphyseal dysplasia 1 protein) (Transmembrane protein 16E)	ANO5 GDD1 TMEM16E	Homo sapiens (Human)	913
+Q96JD6	AKCL2_HUMAN	reviewed	1,5-anhydro-D-fructose reductase (AF reductase) (EC 1.1.1.263) (Aldo-keto reductase family 1 member C-like protein 2) (Aldo-keto reductase family 1 member E2) (LoopADR) (Testis aldo-keto reductase) (htAKR) (Testis-specific protein) (hTSP)	AKR1E2 AKR1CL2 AKRDC1	Homo sapiens (Human)	320
+P02655	APOC2_HUMAN	reviewed	Apolipoprotein C-II (Apo-CII) (ApoC-II) (Apolipoprotein C2) [Cleaved into: Proapolipoprotein C-II (ProapoC-II)]	APOC2 APC2	Homo sapiens (Human)	101
+P55056	APOC4_HUMAN	reviewed	Apolipoprotein C-IV (Apo-CIV) (ApoC-IV) (Apolipoprotein C4)	APOC4	Homo sapiens (Human)	127
+Q8WXK4	ASB12_HUMAN	reviewed	Ankyrin repeat and SOCS box protein 12 (ASB-12)	ASB12	Homo sapiens (Human)	309
+Q9ULK2	AT7L1_HUMAN	reviewed	Ataxin-7-like protein 1 (Ataxin-7-like protein 4)	ATXN7L1 ATXN7L4 KIAA1218	Homo sapiens (Human)	861
+Q99700	ATX2_HUMAN	reviewed	Ataxin-2 (Spinocerebellar ataxia type 2 protein) (Trinucleotide repeat-containing gene 13 protein)	ATXN2 ATX2 SCA2 TNRC13	Homo sapiens (Human)	1313
+O75882	ATRN_HUMAN	reviewed	Attractin (DPPT-L) (Mahogany homolog)	ATRN KIAA0548 MGCA	Homo sapiens (Human)	1429
+Q6ZP68	ATPUN_HUMAN	reviewed	Putative protein ATP11AUN (Putative ATP11A upstream neighbor protein)	ATP11AUN C13orf35	Homo sapiens (Human)	121
+P56385	ATP5I_HUMAN	reviewed	ATP synthase subunit e, mitochondrial (ATPase subunit e) (ATP synthase membrane subunit e) [Cleaved into: ATP synthase subunit e, mitochondrial, N-terminally processed]	ATP5ME ATP5I ATP5K	Homo sapiens (Human)	69
+P56945	BCAR1_HUMAN	reviewed	Breast cancer anti-estrogen resistance protein 1 (CRK-associated substrate) (Cas scaffolding protein family member 1) (p130cas)	BCAR1 CAS CASS1 CRKAS	Homo sapiens (Human)	870
+Q9HBH7	BEX1_HUMAN	reviewed	Protein BEX1 (Brain-expressed X-linked protein 1)	BEX1	Homo sapiens (Human)	125
+Q6ZU67	BEND4_HUMAN	reviewed	BEN domain-containing protein 4 (Coiled-coil domain-containing protein 4)	BEND4 CCDC4	Homo sapiens (Human)	534
+Q8TDH9	BL1S5_HUMAN	reviewed	Biogenesis of lysosome-related organelles complex 1 subunit 5 (BLOC-1 subunit 5) (Protein Muted homolog)	BLOC1S5 MUTED	Homo sapiens (Human)	187
+Q9BQP9	BPIA3_HUMAN	reviewed	BPI fold-containing family A member 3 (Short palate, lung and nasal epithelium carcinoma-associated protein 3)	BPIFA3 C20orf71 SPLUNC3	Homo sapiens (Human)	254
+Q9H3F6	BACD3_HUMAN	reviewed	BTB/POZ domain-containing adapter for CUL3-mediated RhoA degradation protein 3 (hBACURD3) (BTB/POZ domain-containing protein KCTD10) (Potassium channel tetramerization domain-containing protein 10)	KCTD10 ULR061 MSTP028	Homo sapiens (Human)	313
+P04920	B3A2_HUMAN	reviewed	Anion exchange protein 2 (AE 2) (Anion exchanger 2) (Non-erythroid band 3-like protein) (BND3L) (Solute carrier family 4 member 2)	SLC4A2 AE2 EPB3L1 HKB3 MPB3L	Homo sapiens (Human)	1241
+Q969J3	BORC5_HUMAN	reviewed	BLOC-1-related complex subunit 5 (Loss of heterozygosity 12 chromosomal region 1) (Myristoylated lysosomal protein) (Myrlysin)	BORCS5 LOH12CR1	Homo sapiens (Human)	196
+Q8TDN6	BRX1_HUMAN	reviewed	Ribosome biogenesis protein BRX1 homolog (Brix domain-containing protein 2)	BRIX1 BRIX BXDC2	Homo sapiens (Human)	353
